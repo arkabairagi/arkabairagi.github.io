@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-y-scroll">
+<html lang="en">
 <head>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honors - Arka Bairagi</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Exact same styles as Academics.html */
         body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
         .nav-link:hover { color: #800000; text-decoration: underline; }
         .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
-        .degree-title { font-size: 1.25rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.25rem; }
-        .institution-info { font-style: italic; color: #333; margin-top: 0.25rem; }
-        .date-range { color: #555; font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.5rem; }
+        /* Using the same date formatting as your index.html news section */
+        .news-date { font-weight: normal; min-width: 110px; display: inline-block; color: #374151; }
     </style>
 </head>
 <body class="bg-white text-gray-800 leading-relaxed">
@@ -21,7 +21,7 @@
     <header class="max-w-6xl mx-auto px-4 py-6 border-b border-gray-100">
         <div class="flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10">
+                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10"> 
                 <h1 class="text-xl text-gray-700 font-medium">Homepage of Arka Bairagi</h1>
             </div>
 
@@ -50,69 +50,58 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-10">
-        <h2 class="text-2xl font-bold mb-12">Awards & Recognitions</h2>
+        
+        <h2 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-100 pb-4">Awards & Recognitions</h2>
 
-        <div class="relative border-l-2 border-red-900 ml-2 pl-8 space-y-12">
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">Reviewing Activities</h3>
+            <ul class="space-y-4">
+                <li>
+                    <span class="news-date">[2024-2026]</span> 
+                    Invited as a <span class="text-blue-800 font-medium">Reviewer</span> for the following:
+                    <ul class="ml-28 mt-2 space-y-1 text-gray-700 list-disc list-inside">
+                        <li>Circuits, Systems, and Signal Processing - Springer Nature</li>
+                        <li>6th IEEE INDISCON-2025</li>
+                        <li>4th IEEE International Conference on CVMI 2025</li>
+                        <li>2025 IEEE 3rd International Symposium (Sustainable Energy & Cybersecurity)</li>
+                        <li>4th IEEE IATMSI-2026</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">Peer Reviewer</h3>
-                <p class="institution-info">Academic Journals & Conferences</p>
-                <span class="date-range">[2024 - 2026]</span>
-                <ul class="list-disc ml-6 space-y-1 text-gray-700">
-                    <li>Circuits, Systems, and Signal Processing - Springer Nature</li>
-                    <li>6th IEEE INDISCON-2025</li>
-                    <li>4th IEEE International Conference on Computer Vision and Machine Intelligence - CVMI 2025</li>
-                    <li>2025 IEEE 3rd International Symposium on Sustainable Energy, Signal Processing and Cybersecurity</li>
-                    <li>4th IEEE IATMSI-2026</li>
-                </ul>
-            </section>
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">Academic Honors</h3>
+            <ul class="space-y-4">
+                <li>
+                    <span class="news-date">[July 2023]</span> 
+                    Secured <span class="text-blue-800 font-bold">First Class First position (Gold Medalist)</span> in Two Year M.Tech in Electrical Engineering, University of Calcutta.
+                </li>
+                <li>
+                    <span class="news-date">[2015]</span> 
+                    Secured <span class="text-blue-800 font-bold">Top 1% position</span> in the Higher Secondary (WBCHSE) - 10+2 Examination.
+                </li>
+            </ul>
+        </section>
 
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">First Class First</h3>
-                <p class="institution-info">Two Year M.Tech in Electrical Engineering, University of Calcutta</p>
-                <span class="date-range">[July 2023]</span>
-                <ul class="list-disc ml-6 space-y-1 text-gray-700">
-                    <li>Awarded for securing the highest marks in the graduating batch.</li>
-                </ul>
-            </section>
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">Fellowships & Scholarships</h3>
+            <ul class="space-y-4">
+                <li>
+                    <span class="news-date">[2024-2029]</span> 
+                    Awarded <span class="text-blue-800 font-medium">Institute Fellowship</span> by MHRD, Govt. of India for pursuing PhD at NIT Rourkela.
+                </li>
+                <li>
+                    <span class="news-date">[2015]</span> 
+                    Selected for <span class="text-blue-800 font-medium">INSPIRE-Scholarship for Higher Education (INSPIRE-SHE)</span> by the Department of Science and Technology, Govt. of India.
+                </li>
+            </ul>
+        </section>
 
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">Institute Fellowship (PhD)</h3>
-                <p class="institution-info">MHRD, Government of India</p>
-                <span class="date-range">[Aug 2024 - 2029]</span>
-                <ul class="list-disc ml-6 space-y-1 text-gray-700">
-                    <li>Selected for the doctoral research fellowship at NIT Rourkela.</li>
-                </ul>
-            </section>
-
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">INSPIRE - Scholarship for Higher Education</h3>
-                <p class="institution-info">DST, Government of India</p>
-                <span class="date-range">[2015]</span>
-                <ul class="list-disc ml-6 space-y-1 text-gray-700">
-                    <li>Batch of 2015, awarded for excellence in Higher Secondary examinations.</li>
-                </ul>
-            </section>
-
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">Top 1% Rank (WBCHSE)</h3>
-                <p class="institution-info">Higher Secondary - 10+2 Examination</p>
-                <span class="date-range">[2015]</span>
-                <ul class="list-disc ml-6 space-y-1 text-gray-700">
-                    <li>Secured a position in the top 1% of the West Bengal Council of Higher Secondary Education.</li>
-                </ul>
-            </section>
-
-        </div> 
     </main>
 
     <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-100 text-right text-sm text-gray-500">
-        © 2025–2026, Arka Bairagi, Rourkela, India.
+        © 2025-2026, Arka Bairagi, Rourkela, India.
     </footer>
 
     <script>
@@ -124,5 +113,6 @@
             menu.classList.toggle('flex');
         });
     </script>
+
 </body>
 </html>
