@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="overflow-y-scroll"> <head>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+        
+        /* Navigation Consistency */
         .nav-link:hover { color: #800000; text-decoration: underline; }
-        .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
+        .active-nav { 
+            background-color: #7a2113; 
+            color: white; 
+            padding: 5px 15px; 
+            border-radius: 4px; 
+            display: inline-block;
+        }
+
+        /* Standardized Header Height to prevent vertical jump */
+        .header-height { height: 80px; }
         
         /* Matching the Academics page styles exactly */
         .degree-title { font-size: 1.25rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.25rem; }
         .institution-info { font-style: italic; color: #333; margin-top: 0.25rem; }
         .date-range { color: #555; font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.5rem; }
         
-        /* Sub-list Diamond Bullets (kept from your original honors design) */
+        /* Sub-list Diamond Bullets */
         .sub-list { margin-top: 0.5rem; margin-left: 0.5rem; }
         .sub-list li { margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem; }
         .sub-list li::before { 
@@ -32,9 +42,9 @@
 <body class="bg-white text-gray-800 leading-relaxed">
 
     <header class="max-w-6xl mx-auto px-4 py-6 border-b border-gray-100">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center header-height">
             <div class="flex items-center gap-3">
-                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10">
+                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10 w-auto">
                 <h1 class="text-xl text-gray-700 font-medium">Homepage of Arka Bairagi</h1>
             </div>
 
@@ -44,7 +54,7 @@
                 </svg>
             </button>
 
-            <nav class="hidden md:flex gap-6 text-sm font-medium">
+            <nav class="hidden md:flex gap-6 text-sm font-medium items-center">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="Experiences.html" class="nav-link">Experiences</a>
                 <a href="Academics.html" class="nav-link">Academics</a>
@@ -74,8 +84,8 @@
                 <ul class="sub-list text-gray-700">
                     <li>Circuits, Systems, and Signal Processing - Springer Nature</li>
                     <li>6th IEEE INDISCON-2025</li>
-                    <li>4th IEEE International Conference on Computer Vision and Machine Intelligence (CVMI 2025)</li>
-                    <li>2025 IEEE 3rd International Symposium on Sustainable Energy, Signal Processing and Cybersecurity</li>
+                    <li>4th IEEE International Conference on CVMI 2025</li>
+                    <li>2025 IEEE 3rd International Symposium (Sustainable Energy & Cybersecurity)</li>
                     <li>4th IEEE IATMSI-2026</li>
                 </ul>
             </section>
@@ -85,15 +95,7 @@
                 <h3 class="degree-title">First Class First</h3>
                 <p class="institution-info">Two Year M.Tech in Electrical Engineering, University of Calcutta</p>
                 <span class="date-range">[July 2023]</span>
-                <p class="text-gray-700">Awarded for securing the highest marks in the Master of Technology program.</p>
-            </section>
-
-            <section class="relative">
-                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
-                <h3 class="degree-title">Top 1% Rank</h3>
-                <p class="institution-info">Higher Secondary - 10+2 Examination (WBCHSE)</p>
-                <span class="date-range">[2015]</span>
-            </p>
+                <p class="text-gray-700">Awarded for securing the top rank in the graduating M.Tech batch.</p>
             </section>
 
             <section class="relative">
@@ -101,6 +103,7 @@
                 <h3 class="degree-title">Institute Fellowship (PhD)</h3>
                 <p class="institution-info">MHRD, Government of India</p>
                 <span class="date-range">[Aug 2024 – 2029]</span>
+                <p class="text-gray-700">Recipient of the research fellowship for doctoral studies at NIT Rourkela.</p>
             </section>
 
             <section class="relative">
@@ -108,7 +111,13 @@
                 <h3 class="degree-title">INSPIRE-SHE Scholarship</h3>
                 <p class="institution-info">DST, Government of India</p>
                 <span class="date-range">[2015]</span>
-                <p class="text-gray-700">Scholarship for Higher Education (SHE) awarded by the Department of Science and Technology.</p>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Top 1% Rank (WBCHSE)</h3>
+                <p class="institution-info">Higher Secondary - 10+2 Examination</p>
+                <span class="date-range">[2015]</span>
             </section>
 
         </div> 
