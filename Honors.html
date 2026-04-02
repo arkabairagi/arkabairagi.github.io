@@ -7,25 +7,16 @@
     <title>Honors - Arka Bairagi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Corrected 'Terbuchet' to 'Trebuchet' */
         body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
         .nav-link:hover { color: #800000; text-decoration: underline; }
         .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
         
-        .section-heading { font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem; color: #1a1a1a; }
+        /* Matching the Academics page styles exactly */
+        .degree-title { font-size: 1.25rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.25rem; }
+        .institution-info { font-style: italic; color: #333; margin-top: 0.25rem; }
+        .date-range { color: #555; font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.5rem; }
         
-        /* Main Diamond Bullets */
-        .main-list > li { margin-bottom: 1.5rem; position: relative; padding-left: 1.8rem; }
-        .main-list > li::before { 
-            content: "◆"; 
-            position: absolute; 
-            left: 0; 
-            color: #7a2113; 
-            font-size: 1.1rem;
-            top: -1px;
-        }
-
-        /* Sub-list Diamond Bullets */
+        /* Sub-list Diamond Bullets (kept from your original honors design) */
         .sub-list { margin-top: 0.5rem; margin-left: 0.5rem; }
         .sub-list li { margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem; }
         .sub-list li::before { 
@@ -71,46 +62,60 @@
         </nav>
     </header>
 
-    <!-- <main class="max-w-6xl mx-auto px-4 py-10"> -->
-    <main class="max-w-6xl mx-auto px-4 md:pl-8 py-10">
-        <h2 class="text-2xl font-bold mb-10 text-gray-900">Awards & Recognitions</h2>
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-12 text-gray-900">Awards & Recognitions</h2>
 
-        <section class="relative">
-            <ul class="main-list text-gray-800">
-                <li>
-                    <strong>Reviewer</strong> for:
-                    <ul class="sub-list">
-                        <li>Circuits, Systems, and Signal Processing - Springer Nature</li>
-                        <li>6th IEEE INDISCON-2025</li>
-                        <li>4th IEEE International Conference on Computer Vision and Machine Intelligence - CVMI 2025</li>
-                        <li>2025 IEEE 3rd International Symposium on Sustainable Energy, Signal Processing and Cybersecurity</li>
-                        <li>4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI-2026)</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>First Class First</strong> in <strong>Two Year M.Tech in Electrical Engineering, University of Calcutta, 2023</strong>
-                </li>
-                <li>
-                    <strong>Top 1%</strong> in <strong>Higher Secondary - 10+2 Examination (WBCHSE), 2015</strong>
-                </li>
-            </ul>
-        </section>
+        <div class="relative border-l-2 border-red-900 ml-2 pl-8 space-y-12">
 
-        <section class="mb-10 border-t pt-8">
-            <h3 class="section-heading">Fellowships</h3>
-            <ul class="main-list text-gray-800">
-                <li>
-                    <strong>Institute Fellowship (during PhD)</strong> by <strong>MHRD, Government of India, 2024–2029</strong>
-                </li>
-                <li>
-                    <strong>INSPIRE - Scholarship for Higher Education (INSPIRE-SHE), batch of 2015</strong>, by <strong>DST, Government of India, 2015.</strong>
-                </li>
-            </ul>
-        </section>
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Peer Reviewer</h3>
+                <span class="date-range">[2024 - 2026]</span>
+                <ul class="sub-list text-gray-700">
+                    <li>Circuits, Systems, and Signal Processing - Springer Nature</li>
+                    <li>6th IEEE INDISCON-2025</li>
+                    <li>4th IEEE International Conference on Computer Vision and Machine Intelligence (CVMI 2025)</li>
+                    <li>2025 IEEE 3rd International Symposium on Sustainable Energy, Signal Processing and Cybersecurity</li>
+                    <li>4th IEEE IATMSI-2026</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">First Class First</h3>
+                <p class="institution-info">Two Year M.Tech in Electrical Engineering, University of Calcutta</p>
+                <span class="date-range">[July 2023]</span>
+                <p class="text-gray-700">Awarded for securing the highest marks in the Master of Technology program.</p>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Top 1% Rank</h3>
+                <p class="institution-info">Higher Secondary - 10+2 Examination (WBCHSE)</p>
+                <span class="date-range">[2015]</span>
+            </p>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Institute Fellowship (PhD)</h3>
+                <p class="institution-info">MHRD, Government of India</p>
+                <span class="date-range">[Aug 2024 – 2029]</span>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">INSPIRE-SHE Scholarship</h3>
+                <p class="institution-info">DST, Government of India</p>
+                <span class="date-range">[2015]</span>
+                <p class="text-gray-700">Scholarship for Higher Education (SHE) awarded by the Department of Science and Technology.</p>
+            </section>
+
+        </div> 
     </main>
 
     <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-100 text-right text-sm text-gray-500">
-        © 2025- 2026, Arka Bairagi, Rourkela, India.
+        © 2025–2026, Arka Bairagi, Rourkela, India.
     </footer>
 
     <script>
