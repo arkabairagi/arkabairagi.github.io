@@ -9,10 +9,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Forces scrollbar to prevent horizontal layout jumping */
+        html { overflow-y: scroll; }
         body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+        
+        /* Unified Nav Styling to prevent "Active Tab Shift" */
+        .nav-item { padding: 5px 15px; display: inline-block; border-radius: 4px; transition: all 0.2s; }
         .nav-link:hover { color: #800000; text-decoration: underline; }
-        .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
-        /* Matching the Honors/Index date formatting */
+        .active-nav { background-color: #7a2113; color: white !important; }
+        
         .news-date { font-weight: normal; min-width: 110px; display: inline-block; color: #374151; }
         .paper-link { color: #1e40af; text-decoration: none; }
         .paper-link:hover { text-decoration: underline; }
@@ -33,27 +38,27 @@
                 </svg>
             </button>
 
-            <nav class="hidden md:flex gap-6 text-sm font-medium">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="Experiences.html" class="nav-link">Experiences</a>
-                <a href="Academics.html" class="nav-link">Academics</a>
-                <a href="Honors.html" class="nav-link">Honors</a>
-                <a href="Publications.html" class="active-nav">Publications</a>
+            <nav class="hidden md:flex gap-2 text-sm font-medium">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="Experiences.html" class="nav-item nav-link">Experiences</a>
+                <a href="Academics.html" class="nav-item nav-link">Academics</a>
+                <a href="Honors.html" class="nav-item nav-link">Honors</a>
+                <a href="Publications.html" class="nav-item active-nav">Publications</a>
             </nav>
         </div>
 
         <nav id="mobile-menu" class="hidden flex-col gap-4 mt-6 text-center text-sm font-medium md:hidden bg-gray-50 p-4 rounded-lg">
-            <a href="index.html" class="block py-2 hover:text-[#7a2113]">Home</a>
-            <a href="Experiences.html" class="block py-2 hover:text-[#7a2113]">Experiences</a>
-            <a href="Academics.html" class="block py-2 hover:text-[#7a2113]">Academics</a>
-            <a href="Honors.html" class="block py-2 hover:text-[#7a2113]">Honors</a>
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="Experiences.html" class="block py-2">Experiences</a>
+            <a href="Academics.html" class="block py-2">Academics</a>
+            <a href="Honors.html" class="block py-2">Honors</a>
             <a href="Publications.html" class="block py-2 text-[#7a2113] font-bold underline">Publications</a>
         </nav>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-10">
         
-        <!-- <h2 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-100 pb-4">Publications</h2> -->
+        <h2 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-100 pb-4">Publications</h2>
 
         <section class="mb-16">
             <h3 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">Journal Publications</h3>
