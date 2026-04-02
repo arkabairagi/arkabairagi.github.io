@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - Arka Bairagi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Fixed font spelling */
+        body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+        .nav-link:hover { color: #800000; text-decoration: underline; }
+        .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
+        .role-title { font-style: italic; text-decoration: underline; font-weight: 500; color: #333; }
+        .date-range { color: #555; font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 leading-relaxed">
+
+    <header class="max-w-6xl mx-auto px-4 py-6 border-b border-gray-100">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10">
+                <h1 class="text-xl text-gray-700 font-medium">Homepage of Arka Bairagi</h1>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Experiences.html" class="active-nav">Experiences</a>
+                <a href="Academics.html" class="nav-link">Academics</a>
+                <a href="Honors.html" class="nav-link">Honors</a>
+                <a href="Publications.html" class="nav-link">Publications</a>
+            </nav>
+        </div>
+
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-6 text-center text-sm font-medium md:hidden bg-gray-50 p-4 rounded-lg">
+            <a href="index.html" class="block py-2 hover:text-[#7a2113]">Home</a>
+            <a href="Experiences.html" class="block py-2 text-[#7a2113] font-bold underline">Experiences</a>
+            <a href="Academics.html" class="block py-2 hover:text-[#7a2113]">Academics</a>
+            <a href="Honors.html" class="block py-2 hover:text-[#7a2113]">Honors</a>
+            <a href="Publications.html" class="block py-2 hover:text-[#7a2113]">Publications</a>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-12 text-gray-900">Experiences</h2>
+
+        <div class="relative border-l-2 border-red-900 ml-2 pl-8 space-y-12">
+            
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="text-xl font-bold text-gray-900 leading-tight">National Institute of Technology Rourkela</h3>
+                <div class="mt-4">
+                    <h4 class="role-title">Teaching Assistant</h4>
+                    <ul class="list-decimal ml-6 mt-2 space-y-1 text-gray-700">
+                        <li>EC4701: Soft Computing Laboratory - [Jan - May 2025/26]</li>
+                        <li>EC3705: Digital Signal Processing Laboratory - [Aug - Nov 2025]</li>
+                        <li>CS2011: Introduction to AI and ML - [Aug - Nov 2025]</li>
+                        <li>EC2700: Basic Electronics Laboratory - [Aug - Nov 2024]</li>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <h4 class="role-title">Research Scholar</h4>
+                    <span class="date-range">[Aug 2024 - till now]</span>
+                    <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                        <li>Member of <a href="https://prism-nitrkl.github.io/" target="_blank" class="text-blue-800 font-bold hover:text-blue-900 hover:underline">PRISM, NIT Rourkela</a></li>
+                        <li>Area of Specialization: Computer Vision</li>
+                        <li>Supervisor: Dr. Sobhan Kanti Dhara; Co-Supervisor: Prof. Samit Ari</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="text-xl font-bold text-gray-900">IDEAS - Technology Innovation Hub @ Indian Statistical Institute Kolkata</h3>
+                <h4 class="role-title mt-3">Project-Linked Junior Research Fellow</h4>
+                <span class="date-range">[Jan - July 2024]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Project Title: Prediction of Walking Imbalance and Performance Improvement of Designed Prosthetic Lower Limb</li>
+                    <li>Funding agency: IDEAS-TIH, Indian Statistical Institute Kolkata</li>
+                    <li>Project Investigator: Dr. Dalia Nandi (Assistant Professor, IIIT Kalyani)</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="text-xl font-bold text-gray-900">Primetals Technologies India Private Limited</h3>
+                <h4 class="role-title mt-3">Graduate Trainee Engineer</h4>
+                <span class="date-range">[Aug - Dec 2023]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Steel plant automation and commissioning</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="text-xl font-bold text-gray-900">Robotronics India</h3>
+                <h4 class="role-title mt-3">Production Supervisor</h4>
+                <span class="date-range">[Aug 2020 - Oct 2021]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Manufacturing supervision</li>
+                </ul>
+            </section>
+        </div> 
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-100 text-right text-sm text-gray-500">
+        © 2025- 2026, Arka Bairagi, Rourkela, India.
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>

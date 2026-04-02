@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Arka Bairagi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fixed 'Trebuchet' spelling */
+        body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+        .nav-link:hover { color: #800000; text-decoration: underline; }
+        .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
+        .degree-title { font-size: 1.25rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.25rem; }
+        .institution-info { font-style: italic; color: #333; margin-top: 0.25rem; }
+        .date-range { color: #555; font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 leading-relaxed">
+
+    <header class="max-w-6xl mx-auto px-4 py-6 border-b border-gray-100">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10">
+                <h1 class="text-xl text-gray-700 font-medium">Homepage of Arka Bairagi</h1>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Experiences.html" class="nav-link">Experiences</a>
+                <a href="Academics.html" class="active-nav">Academics</a>
+                <a href="Honors.html" class="nav-link">Honors</a>
+                <a href="Publications.html" class="nav-link">Publications</a>
+            </nav>
+        </div>
+
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-6 text-center text-sm font-medium md:hidden bg-gray-50 p-4 rounded-lg">
+            <a href="index.html" class="block py-2 hover:text-[#7a2113]">Home</a>
+            <a href="Experiences.html" class="block py-2 hover:text-[#7a2113]">Experiences</a>
+            <a href="Academics.html" class="block py-2 text-[#7a2113] font-bold underline">Academics</a>
+            <a href="Honors.html" class="block py-2 hover:text-[#7a2113]">Honors</a>
+            <a href="Publications.html" class="block py-2 hover:text-[#7a2113]">Publications</a>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-12">Academics</h2>
+
+        <div class="relative border-l-2 border-red-900 ml-2 pl-8 space-y-12">
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Doctor of Philosophy (PhD)</h3>
+                <p class="institution-info text-gray-900 font-medium">Department of Electronics and Communication Engineering, National Institute of Technology Rourkela</p>
+                <span class="date-range">[Aug 2024 - till date]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Enrolled as an Institute Fellow</li>
+                    <li>Area of Specialization: Computer Vision</li>
+                    <li>Supervisor: Dr. Sobhan Kanti Dhara; Co-Supervisor: Prof. Samit Ari</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Master of Technology (MTech.) in Electrical Engineering</h3>
+                <p class="institution-info">Department of Applied Physics, University of Calcutta</p>
+                <span class="date-range">[Nov 2021- July 2023]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Specialization: Advanced Control and Measurement Systems</li>
+                    <li class="font-semibold text-gray-800">Order of Merit: First Class First</li>
+                    <li>Thesis: Face Point Tracking based Facial Expression Recognition Employing Computational Intelligence Techniques</li>
+                    <li>Supervisor: Prof. Kaushik Das Sharma</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Bachelor of Technology (BTech.) in Electrical Engineering</h3>
+                <p class="institution-info">Government College of Engineering and Textile Technology, Berhampore</p>
+                <p class="text-xs text-gray-500 italic mb-1">(affiliated under the Maulana Abul Kalam Azad University of Technology, West Bengal)</p>
+                <span class="date-range">[Sept 2016 - July 2020]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Volunteer Experience: Training and Placement Students' Member for Department of Electrical Engineering.</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title text-gray-600">Bachelor of Science (BSc) in Physics (Hons.) - <span class="italic">Transfer</span></h3>
+                <p class="institution-info">Hooghly Mohsin College</p>
+                <p class="text-xs text-gray-500 italic mb-1">(affiliated under The University of Burdwan)</p>
+                <span class="date-range">[Sept 2015 - Sept 2016]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Completed Part - I with First Class before joining Engineering.</li>
+                </ul>
+            </section>
+
+            <section class="relative">
+                <div class="absolute -left-[41px] top-1.5 w-4 h-4 bg-red-700 rounded-full border-2 border-white shadow-sm"></div>
+                <h3 class="degree-title">Higher Secondary (10+2)</h3>
+                <p class="institution-info">Hooghly Branch (Govt.) School</p>
+                <span class="date-range">[Feb 2014 - May 2015]</span>
+                <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                    <li>Secured <span class="font-bold text-gray-800">top 1%</span> in the West Bengal Council of Higher Secondary Education (WBCHSE) batch of 2015.</li>
+                </ul>
+            </section>
+        </div> 
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-100 text-right text-sm text-gray-500">
+        © 2025- 2026, Arka Bairagi, Rourkela, India.
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>

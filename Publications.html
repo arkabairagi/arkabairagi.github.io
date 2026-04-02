@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Arka Bairagi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+        .nav-link:hover { color: #800000; text-decoration: underline; }
+        .active-nav { background-color: #7a2113; color: white; padding: 5px 15px; border-radius: 4px; }
+        
+        /* Section Headings matching Experiences/Academics */
+        .pub-section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem; color: #1a1a1a; margin-top: 2.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        
+        /* Standard Numbered List Styling */
+        .pub-list { list-style-type: decimal; margin-left: 1.5rem; }
+        .pub-list li { margin-bottom: 1.5rem; padding-left: 0.5rem; text-align: justify; line-height: 1.6; color: #374151; }
+        
+        .paper-title { color: #0066cc; text-decoration: none; font-weight: 500; }
+        .paper-title:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 leading-relaxed">
+
+    <header class="max-w-6xl mx-auto px-4 py-6 border-b border-gray-100">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/NITRkl_logo.jpg" alt="Logo" class="h-10">
+                <h1 class="text-xl text-gray-700 font-medium">Homepage of Arka Bairagi</h1>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Experiences.html" class="nav-link">Experiences</a>
+                <a href="Academics.html" class="nav-link">Academics</a>
+                <a href="Honors.html" class="nav-link">Honors</a>
+                <a href="Publications.html" class="active-nav">Publications</a>
+            </nav>
+        </div>
+
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-6 text-center text-sm font-medium md:hidden bg-gray-50 p-4 rounded-lg">
+            <a href="index.html" class="block py-2 hover:text-[#7a2113]">Home</a>
+            <a href="Experiences.html" class="block py-2 hover:text-[#7a2113]">Experiences</a>
+            <a href="Academics.html" class="block py-2 hover:text-[#7a2113]">Academics</a>
+            <a href="Honors.html" class="block py-2 hover:text-[#7a2113]">Honors</a>
+            <a href="Publications.html" class="block py-2 text-[#7a2113] font-bold">Publications</a>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-8">Publications</h2>
+
+        <section class="mb-12">
+            <h3 class="pub-section-title">Journal Publications</h3>
+            <p class="text-gray-500 italic ml-2">Information to be updated soon.</p>
+        </section>
+
+        <section class="mb-12">
+            <h3 class="pub-section-title">Conference Publications</h3>
+            <ol class="pub-list">
+                <li>
+                    <strong>A. Bairagi</strong>, B. P. Das, A. Dey and K. D. Sharma, "<a href="https://doi.org/10.1109/CIEC59440.2024.10468402" class="paper-title">A Nonlinear Projection Based Human Emotion Recognition Approach Employing Face Point Data</a>," 
+                    <em>2024 IEEE 3rd International Conference on Control, Instrumentation, Energy & Communication (CIEC)</em>, Kolkata, India, 2024, pp. 19-24, doi: 10.1109/CIEC59440.2024.10468402.
+                </li>
+            </ol>
+        </section>
+
+        <section class="mb-20">
+            <h3 class="pub-section-title">Book and Book Chapters</h3>
+            <ol class="pub-list">
+                <li>
+                    D. Nandi, <strong>A. Bairagi</strong>, S. Mandal, and O. Bandyopadhyay, “Strategic Development of Smart Prosthetic Lower Limb with Trainable Model for Balanced Movement,” in 
+                    <em>AI in Smart and Secure Healthcare: Research Trends and Future Opportunities</em>, S. Banerjee, S. Saha, S. Biswas, and N. C. Debnath, Eds., Springer Cham, 2026. <span class="text-green-700 font-semibold">[Accepted]</span>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-100 text-right text-sm text-gray-500">
+        © 2025- 2026, Arka Bairagi, Rourkela, India.
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>
